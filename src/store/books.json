@@ -1,33 +1,37 @@
 {
-  "book": [
+  "books": [
     {
       "id": 1,
-      "name": "Becoming",
+      "title": "Becoming",
       "author": "Michelle Obama",
       "date_read": "2020",
+      "description": "",
       "tags": ["autobiography", "purpose"]
     },
 
     {
       "id": 2,
-      "name": "The Educaiton of an Idealist",
+      "title": "The Educaiton of an Idealist",
       "author": "Samantha Power",
       "date_read": "2020",
+      "description": "",
       "tags": ["autobiography", "human rights", "foreign policy"]
     },
     {
       "id": 3,
-      "name": "Ready Player One",
+      "title": "Ready Player One",
       "author": "Ernest Cline",
       "date_read": "2019",
+      "description": "",
       "tags": ["fiction", "sci-fi"]
     },
 
     {
       "id": 4,
-      "name": "Animal Farm",
+      "title": "Animal Farm",
       "author": "George Orwell",
       "date_read": "2018",
+      "description": "",
       "tags": ["allegorical", "pyschology"]
     }
   ]
