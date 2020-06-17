@@ -1,5 +1,5 @@
 package models
 
 type Books struct {
-	Books []*Book `json:"book_entries"`
+	Books []*Book `json:"books"`
 }

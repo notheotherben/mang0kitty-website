@@ -1,38 +1,236 @@
-{
-  "books": [
-    {
-      "id": 1,
-      "title": "Becoming",
-      "author": "Michelle Obama",
-      "date_read": "2020",
-      "description": "",
-      "tags": ["autobiography", "purpose"]
-    },
+[
+  {
+    "id": 1,
+    "title": "Becoming",
+    "author": ["Michelle Obama"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/becoming.jpg",
+    "isbn": "9788811149866",
+    "tags": ["autobiography", "purpose"]
+  },
 
-    {
-      "id": 2,
-      "title": "The Educaiton of an Idealist",
-      "author": "Samantha Power",
-      "date_read": "2020",
-      "description": "",
-      "tags": ["autobiography", "human rights", "foreign policy"]
-    },
-    {
-      "id": 3,
-      "title": "Ready Player One",
-      "author": "Ernest Cline",
-      "date_read": "2019",
-      "description": "",
-      "tags": ["fiction", "sci-fi"]
-    },
+  {
+    "id": 2,
+    "title": "The Education of an Idealist",
+    "author": ["Samantha Power"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/theEducationOfAnIdealist.jpeg",
+    "isbn": "9780062943842",
+    "tags": ["autobiography", "human rights", "foreign policy"]
+  },
+  {
+    "id": 3,
+    "title": "Sandworm",
+    "author": ["Andy Greenberg"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/sandworm.jpg",
+    "isbn": "9780525564638",
+    "tags": ["cybersecurity", "foreign policy"]
+  },
+  {
+    "id": 4,
+    "title": "Countdown to Zero Day",
+    "author": ["Zim Zetter"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/countdownToZeroDay.jpg",
+    "isbn": "9780770436193",
+    "tags": ["cybersecurity", "foreign policy"]
+  },
+  {
+    "id": 5,
+    "title": "Why I’m No Longer Talking to White People About Race",
+    "author": ["Reni Eddo-Lodge"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/whyimlonlongertalkingabout.png",
+    "isbn": "9783608504194",
+    "tags": ["human rights", "informative", "racism", "activism"]
+  },
+  {
+    "id": 6,
+    "title": "The Moment of Lift",
+    "author": ["Melinda Gates"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/theMomentOfLift.jpg",
+    "isbn": "9781250257727",
+    "tags": ["informative", "human rights", "inspiring"]
+  },
+  {
+    "id": 7,
+    "title": "Get a Life, Chloe Brown",
+    "author": ["talia Hibbert"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/getalifechloebrown.jpg",
+    "isbn": "9780062941206",
+    "tags": ["funny", "fiction"]
+  },
+  {
+    "id": 8,
+    "title": "The Tattooist of Auschwitz",
+    "author": ["Heather Morris"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/theTattooistOfAuschwitz.jpg",
+    "isbn": "9781785763656",
+    "tags": ["fiction", "history"]
+  },
+  {
+    "id": 9,
+    "title": "Animal",
+    "author": ["Sara Pascoe"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/Animal.jpg",
+    "isbn": "9781785763656",
+    "tags": ["feminism", "growth", "informative"]
+  },
+  {
+    "id": 10,
+    "title": "Girl, Wash Your Face",
+    "author": ["Rachel Hollis"],
+    "date_read": "2020",
+    "description": "",
+    "photo": "/images/girlWashYourFace.jpg",
+    "isbn": "9781400220809",
+    "tags": ["growth", "mindset"]
+  },
+  {
+    "id": 11,
+    "title": "The Nightingale",
+    "author": ["Kristin Hannah"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/theNightingale.jpg",
+    "isbn": "9781509848621",
+    "tags": ["fiction", "history"]
+  },
+  {
+    "id": 12,
+    "title": "You are a badass: How to stop doubting your greatness and start living an awesome life",
+    "author": ["Jen Sincero"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/youAreABadass.jpg",
+    "isbn": "9780762447695",
+    "tags": ["growth", "mindset"]
+  },
+  {
+    "id": 13,
+    "title": "The Little Book of Lykke",
+    "author": ["Meik Wiking"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/theLittleBookOfLykke.jpg",
+    "isbn": "9780062820334",
+    "tags": ["happiness", "hygge", "lifestyle"]
+  },
+  {
+    "id": 14,
+    "title": "Gone Viking",
+    "author": ["Helen Russel"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/GoneViking.jpg",
+    "isbn": "9781785036491",
+    "tags": ["fiction", "funny"]
+  },
+  {
+    "id": 15,
+    "title": "Shoe Dog",
+    "author": ["Phil Knight"],
+    "date_read": "2018",
+    "description": "",
+    "photo": "/images/ShoeDog.jpg",
+    "isbn": "9781501135927",
+    "tags": ["autobiography", "inspiring", "entrepreneurial"]
+  },
 
-    {
-      "id": 4,
-      "title": "Animal Farm",
-      "author": "George Orwell",
-      "date_read": "2018",
-      "description": "",
-      "tags": ["allegorical", "pyschology"]
-    }
-  ]
-}
+  {
+    "id": 16,
+    "title": "Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone",
+    "author": ["Satya Nadella"],
+    "date_read": "2018",
+    "description": "",
+    "photo": "/images/HitRefreshSatya.jpg",
+    "isbn": "9783864704833",
+    "tags": ["autobiography", "technology", "inspiring"]
+  },
+  {
+    "id": 17,
+    "title": "Lean In: Women, Work, and the Will to Lead",
+    "author": ["Sheryl Sandberg"],
+    "date_read": "2018",
+    "description": "",
+    "photo": "/images/LeanIn.jpg",
+    "isbn": "9783548375496",
+    "tags": ["technology", "inspiring", "informative"]
+  },
+
+  {
+    "id": 18,
+    "title": "Ready Player One",
+    "author": ["Ernest Cline"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/readyPlayerOne.jpg",
+    "isbn": "9781784754792",
+    "tags": ["fiction", "sci-fi"]
+  },
+
+  {
+    "id": 19,
+    "title": "Animal Farm",
+    "author": ["George Orwell"],
+    "date_read": "2018",
+    "description": "",
+    "photo": "/images/animalFarm.jpg",
+    "isbn": "9781444121414",
+    "tags": ["allegorical", "pyschology"]
+  },
+  {
+    "id": 20,
+    "title": "The Little Book of Hygge",
+    "author": ["Meik Wiking"],
+    "date_read": "2018",
+    "description": "",
+    "photo": "/images/theLittleBookOfHygge.jpg",
+    "isbn": "9781432839673",
+    "tags": ["happiness", "hygge", "lifestyle"]
+  },
+  {
+    "id": 21,
+    "title": "The Subtle Art of Not Giving a F*uck",
+    "author": ["Mark Manson"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/The_Subtle_Art_of_Not_Giving_a_F ck.png",
+    "isbn": "9780062457714",
+    "tags": ["mindest", "growth"]
+  },
+  {
+    "id": 22,
+    "title": "Cloud Native DevOps with Kubernetes",
+    "author": ["Jason Arundel, Justin Domingus"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/cloudNativeDevopsWithKubernetes.jpg",
+    "isbn": "9781492040767",
+    "tags": ["devops", "kubernetes"]
+  },
+  {
+    "id": 23,
+    "title": "The Gene: An Intimate History",
+    "author": ["Dr Siddhartha Mukherjee"],
+    "date_read": "2019",
+    "description": "",
+    "photo": "/images/theGeneAnIntimateHistory.jpg",
+    "isbn": "9783596032358",
+    "tags": ["science"]
+  }
+]
