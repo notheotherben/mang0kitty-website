@@ -4,8 +4,7 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
-	"io/ioutil"
-	"log"
+	"io"
 	"net/http"
 	"net/url"
 	"os"
@@ -14,63 +13,82 @@ import (
 	"github.com/mang0kitty/website/src/models"
 )
 
-type XMLStruct struct {
-	ISBN          string `xml:"isbn13"`
-	Description   string `xml:"description"`
-	AverageRating string `xml:"average_rating"`
+type XMLBook struct {
+	ISBN          string  `xml:"book>isbn13"`
+	Description   string  `xml:"book>description"`
+	AverageRating float32 `xml:"book>average_rating"`
 }
 
-func FetchXMl(url string) ([]byte, error) {
+func FetchXML(url string) (io.ReadCloser, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return []byte{}, fmt.Errorf("GET error: %v", err)
+		return nil, fmt.Errorf("GET error: %v", err)
 	}
-	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return []byte{}, fmt.Errorf("Status error: %v", resp.StatusCode)
+		return nil, fmt.Errorf("Status error: %v", resp.StatusCode)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return []byte{}, fmt.Errorf("Read body: %v", err)
-	}
+	return resp.Body, nil
 
-	return body, nil
+	// body, err := ioutil.ReadAll(resp.Body)
+	// if err != nil {
+	// 	return []byte{}, fmt.Errorf("Read body: %v", err)
+	// }
+
+	// return body, nil
 }
 
 func SearchBooks() {
 
-	r, err := os.Open("src/store/books.json")
+	r, err := os.OpenFile("src/store/books.json", os.O_RDWR, os.ModePerm)
 	helpers.CheckError(err)
 	fmt.Println("Successfully Opened books.json")
 
 	defer r.Close()
 
-	byteValue, _ := ioutil.ReadAll(r)
+	var books []*models.Book
+	// TODO: handle errors here
+	helpers.CheckError(json.NewDecoder(r).Decode(&books))
 
-	var books models.Books
-	json.Unmarshal(byteValue, &books.Books)
+	for _, book := range books {
+		grb, err := GoodReads(book.ISBN)
+		if err != nil {
+			fmt.Println("Failed to get info for ISBN", book.ISBN)
+			continue
+		}
 
-	for _, book := range books.Books {
-		GoodReads(book.ISBN)
+		book.Description = grb.Description
+		book.Rating = grb.AverageRating
 	}
 
+	// for _, book := range books {
+	// 	fmt.Printf("ISBN %s (%f): %s\n", book.ISBN, book.Rating, book.Description)
+	// }
+
+	// TODO: handle errors on all of these
+	_, err = r.Seek(0, os.SEEK_SET)
+	helpers.CheckError(err)
+	helpers.CheckError(r.Truncate(0))
+	helpers.CheckError(json.NewEncoder(r).Encode(&books))
 }
 
-func GoodReads(query string) {
+func GoodReads(query string) (*XMLBook, error) {
 	str := "https://www.goodreads.com/book/isbn/" + query
 	u, _ := url.Parse(str)
 	q, _ := url.ParseQuery(u.RawQuery)
-	q.Add("key", "")
+	q.Add("key", os.Getenv("GOODREADS_API_KEY"))
 	u.RawQuery = q.Encode()
 
-	if xmlBytes, err := FetchXMl("https://www.goodreads.com/book/isbn/9781524763138?key=NKF8g4vvWIcFVAZtYOsDIA"); err != nil {
-		log.Printf("Failed to get XML: %v", err)
+	if xmlStream, err := FetchXML(u.String()); err != nil {
+		return nil, err
 	} else {
-		var result XMLStruct
-		xml.Unmarshal(xmlBytes, &result)
-		fmt.Printf("+v\n", result.ISBN)
+		defer xmlStream.Close()
+		var result XMLBook
+		if err := xml.NewDecoder(xmlStream).Decode(&result); err != nil {
+			return nil, err
+		} else {
+			return &result, nil
+		}
 	}
-
 }

@@ -10,11 +10,10 @@ import (
 	"github.com/mang0kitty/website/src/helpers"
 )
 
-func enableCors(w *http.ResponseWriter) {
-	(*w).Header().Set("Access-Control-Allow-Origin", "*")
-	(*w).Header().Set("Access-Control-Allow-Methods", "GET")
-	(*w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
-
+func enableCors(w http.ResponseWriter) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 }
 
 func Handle() *mux.Router {
@@ -25,7 +24,7 @@ func Handle() *mux.Router {
 }
 
 func BookHandler(w http.ResponseWriter, req *http.Request) {
-	enableCors(&w)
+	enableCors(w)
 	fptr, err := os.Open("src/store/books.json")
 	helpers.CheckError(err)
 	fmt.Println("Successfully Opened books.json")
