@@ -33,10 +33,6 @@ func BookHandler(w http.ResponseWriter, req *http.Request) {
 
 	w.Header().Add("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	// var result models.Books
-	// json.NewDecoder(fptr).Decode(&result)
-
-	// json.NewEncoder(w).Encode(result.Books)
 
 	io.Copy(w, fptr)
 }
