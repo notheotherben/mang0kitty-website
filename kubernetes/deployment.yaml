@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aideen-website-server
+  labels:
+    app.kubernetes.io/name: aideen-website
+    app.kubernetes.io/instance: aideen-website-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels: # tells what pods the deployment will apply to
+      app.kubernetes.io/name: aideen-website
+      app.kubernetes.io/instance: aideen-website-server
+  template: #pod Template describing pod that is launched
+    metadata:
+      labels:
+        app.kubernetes.io/name: aideen-website
+        app.kubernetes.io/instance: aideen-website-server
+    spec:
+      containers:
+        - name: website
+          image: faaideen/website:latest
+          ports:
+            - containerPort: 8000
+              protocol: TCP

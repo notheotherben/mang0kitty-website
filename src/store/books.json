@@ -102,7 +102,7 @@
     "id": 10,
     "title": "Girl, Wash Your Face",
     "author": ["Rachel Hollis"],
-    "date_read": 2020,
+    "date_read": 2019,
     "description": "\u003cstrong\u003eWith wry wit and hard-earned wisdom, popular online personality and founder of TheChicSite.com founder Rachel Hollis helps readers break free from the lies keeping them from the joy-filled and exuberant life they are meant to have.\u003c/strong\u003e\u003cbr /\u003e\u003cbr /\u003eFounder of the lifestyle website TheChicSite.com and CEO of her own media company, Chic Media, Rachel Hollis has created an online fan base of hundreds of thousands of fans by sharing tips for living a better life while fearlessly revealing the messiness of her own. Now comes her highly anticipated first book featuring her signature combination of honesty, humor, and direct, no-nonsense advice.\u003cbr /\u003e\u003cbr /\u003eEach chapter of \u003cem\u003eGirl, Wash Your Face\u003c/em\u003e begins with a specific lie Hollis once believed that left her feeling overwhelmed, unworthy, or ready to give up. As a working mother, a former foster parent, and a woman who has dealt with insecurities about her body and relationships, she speaks with the insight and kindness of a BFF, helping women unpack the limiting mind-sets that destroy their self-confidence and keep them from moving forward.\u003cbr /\u003e\u003cbr /\u003eFrom her temporary obsession with marrying Matt Damon to a daydream involving hypnotic iguanas to her son’s request that she buy a necklace to “be like the other moms,” Hollis holds nothing back. With unflinching faith and tenacity, Hollis spurs other women to live with passion and hustle and to awaken their slumbering goals.",
     "photo": "/images/girlWashYourFace.jpg",
     "isbn": "9781400220809",
@@ -251,5 +251,38 @@
     "isbn": "9783596032358",
     "tags": ["science"],
     "rating": 4.36
+  },
+  {
+    "id": 24,
+    "title": "Tools and Weapons: The Promise and the Peril of the Digital Age",
+    "author": ["Brad Smith \u0026 Carol Ann Browne"],
+    "date_read": 2020,
+    "description": "From Microsoft's president and one of the tech industry's broadest thinkers, a frank and thoughtful reckoning with how to balance enormous promise and existential risk as the digitization of everything accelerates.'A colorful and insightful insiders’ view of how technology is both empowering and threatening us. From privacy to cyberattacks, this timely book is a useful guide for how to navigate the digital future.' —Walter Isaacson.Microsoft President Brad Smith operates by a simple core belief: When your technology changes the world, you bear a responsibility to help address the world you have helped create. This might seem uncontroversial, but it flies in the face of a tech sector long obsessed with rapid growth and sometimes on disruption as an end in itself. While sweeping digital transformation holds great promise, we have reached an inflection point. The world has turned information technology into both a powerful tool and a formidable weapon, and new approaches are needed to manage an era defined by even more powerful inventions like artificial intelligence. Companies that create technology must accept greater responsibility for the future, and governments will need to regulate technology by moving faster and catching up with the pace of innovation. In Tools and Weapons, Brad Smith and Carol Ann Browne bring us a captivating narrative from the cockpit of one of the world's largest and most powerful tech companies as it finds itself in the middle of some of the thorniest emerging issues of our time. These are challenges that come with no preexisting playbook, including privacy, cybercrime and cyberwar, social media, the moral conundrums of artificial intelligence, big tech's relationship to inequality, and the challenges for democracy, far and near. While in no way a self-glorifying 'Microsoft memoir,' the book pulls back the curtain remarkably wide onto some of the company's most crucial recent decision points as it strives to protect the hopes technology offers against the very real threats it also presents. There are huge ramifications for communities and countries, and Brad Smith provides a thoughtful and urgent contribution to that effort.",
+    "photo": "/images/toolsAndWeapons.jpg",
+    "isbn": " 9781984879226",
+    "tags": ["technology"],
+    "rating": 4.36
+  },
+  {
+    "id": 25,
+    "title": "Zero to One: Notes on Startups, or How to Build the Future",
+    "author": ["Blake Masters \u0026 Peter Thiel"],
+    "date_read": 2020,
+    "description": "If you want to build a better future, you must believe in secrets. The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things. Thiel begins with the contrarian premise that we live in an age of technological stagnation, even if we’re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself. Doing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique. Zero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.",
+    "photo": "/images/zeroToOne.jpg",
+    "isbn": "9780804139298",
+    "tags": ["technology"],
+    "rating": 4.17
+  },
+  {
+    "id": 26,
+    "title": "Reset: My Fight for Inclusion and Lasting Change",
+    "author": ["Ellen Pao"],
+    "date_read": 2020,
+    "description": "'The necessary and incisive' account of the discrimination case that 'has blown open a conversation about the status of women in the workplace' (The New York Times). In 2015, Ellen K. Pao sued a powerhouse Silicon Valley venture capital firm, calling out workplace discrimination and retaliation against women and other underrepresented groups. Her suit rocked the tech world--and exposed its toxic culture and its homogeneity. Her message overcame negative PR attacks that took aim at her professional conduct and her personal life, and she won widespread public support--Time hailed her as 'the face of change.' Though Pao lost her suit, she revolutionized the conversation at tech offices, in the media, and around the world. In Reset, she tells her full story for the first time. The daughter of immigrants, Pao was taught that through hard work she could achieve her dreams. She earned multiple Ivy League degrees, worked at top startups, and in 2005 was recruited by Kleiner Perkins, arguably the world's leading venture capital firm at the time. In many ways, she did everything right, and yet she and other women and people of color were excluded from success--cut out of decisive meetings and email discussions, uninvited to CEO dinners and lavish networking trips, and had their work undercut or appropriated by male executives. It was time for a system reset. After Kleiner, Pao became CEO of reddit, where she took forceful action to change the status quo for the company and its product. She banned revenge porn and unauthorized nude photos--an action other large media sites later followed--and shut down parts of reddit over online harassment. She and seven other women tech leaders formed Project Include, an award-winning nonprofit for accelerating diversity and inclusion in tech. In her book, Pao shines a light on troubling issues that plague today's workplace and lays out practical, inspiring, and achievable goals for a better future. Ellen K. Pao's Reset is a rallying cry--the story of a whistleblower who aims to empower everyone struggling to be heard, in Silicon Valley and beyond.",
+    "photo": "/images/reset_my_fight_for_inclusion_and_lasting_change.jpg",
+    "isbn": "9780399591013",
+    "tags": ["technology", "inclusion"],
+    "rating": 4.19
   }
 ]
